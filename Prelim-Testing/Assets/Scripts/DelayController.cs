@@ -14,10 +14,12 @@ public class DelayController : MonoBehaviour
     public float rateOfChange;
 
     public AudioClip tickUp, tickDown;
+    public float tickInterval;
     
     // Pre transfer delay variable
     private float _delay;
-    private float _lastDelay;
+    private float _lastDelay; 
+    private float _lastTick;
     private AudioSource _source;
     
 
@@ -53,7 +55,10 @@ public class DelayController : MonoBehaviour
         if (_lastDelay != _delay)
         {
             button.triggerDelay = _delay;
+          if (Mathf.Abs(_lastTick- _delay) >= tickInterval){
             _source.Play();
+            _lastTick = _delay;
+          }
             // print(_delay);
             _lastDelay = _delay;
         }

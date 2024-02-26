@@ -373,7 +373,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 602501571485192258, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_Name
-      value: '* Magenta (4 sec)'
+      value: '* Magenta (2 sec)'
       objectReference: {fileID: 0}
     - target: {fileID: 2868215554839209589, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_LocalPosition.x
@@ -461,7 +461,7 @@ MonoBehaviour:
   boundObject: {fileID: 2051047271}
   buttonSound: {fileID: 8300000, guid: 4a59b541813d93845806e272eefc6a85, type: 3}
   inputKey: 101
-  triggerDelay: 4
+  triggerDelay: 2
 --- !u!1001 &125195050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 602501571485192258, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_Name
-      value: '* Orange (2 sec)'
+      value: '* Orange (1 sec)'
       objectReference: {fileID: 0}
     - target: {fileID: 2868215554839209589, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_LocalPosition.x
@@ -560,7 +560,7 @@ MonoBehaviour:
   boundObject: {fileID: 752275872}
   buttonSound: {fileID: 8300000, guid: 4a59b541813d93845806e272eefc6a85, type: 3}
   inputKey: 101
-  triggerDelay: 2
+  triggerDelay: 1
 --- !u!1001 &263002479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -670,7 +670,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 602501571485192258, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_Name
-      value: '* Light Purple (10 sec)'
+      value: '* Light Purple (7 sec)'
       objectReference: {fileID: 0}
     - target: {fileID: 2868215554839209589, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_LocalPosition.x
@@ -758,7 +758,7 @@ MonoBehaviour:
   boundObject: {fileID: 1896978847}
   buttonSound: {fileID: 8300000, guid: 4a59b541813d93845806e272eefc6a85, type: 3}
   inputKey: 101
-  triggerDelay: 10
+  triggerDelay: 7
 --- !u!1 &452646575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,7 +1386,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 602501571485192258, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_Name
-      value: '* Black (8 sec)'
+      value: '* Black (5 sec)'
       objectReference: {fileID: 0}
     - target: {fileID: 2868215554839209589, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   boundObject: {fileID: 1621281057}
   buttonSound: {fileID: 8300000, guid: 4a59b541813d93845806e272eefc6a85, type: 3}
   inputKey: 101
-  triggerDelay: 8
+  triggerDelay: 5
 --- !u!1 &808982700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3679,7 +3679,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 602501571485192258, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_Name
-      value: '* Dark Green (6 sec)'
+      value: '* Dark Green (3 sec)'
       objectReference: {fileID: 0}
     - target: {fileID: 2868215554839209589, guid: 208674ed8f267ce478decc1efa057867, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3767,7 +3767,7 @@ MonoBehaviour:
   boundObject: {fileID: 1232794267}
   buttonSound: {fileID: 8300000, guid: 4a59b541813d93845806e272eefc6a85, type: 3}
   inputKey: 101
-  triggerDelay: 6
+  triggerDelay: 3
 --- !u!1 &1782256032
 GameObject:
   m_ObjectHideFlags: 0

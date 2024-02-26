@@ -864,8 +864,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 46425167}
   rateOfChange: 0.001
-  tickUp: {fileID: 0}
-  tickDown: {fileID: 0}
+  tickUp: {fileID: 8300000, guid: 45bba3cca7bbc36449cc883f9864cf97, type: 3}
+  tickDown: {fileID: 8300000, guid: 1ee21f1e0e18dea439d330e2ce8cde88, type: 3}
+  tickInterval: 0.06
 --- !u!82 &863279791
 AudioSource:
   m_ObjectHideFlags: 0
