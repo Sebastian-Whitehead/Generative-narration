@@ -28,6 +28,9 @@ public class DelayController : MonoBehaviour
         // Copy starting value from the button script
         _delay = _lastDelay = button.triggerDelay;
         _source = GetComponent<AudioSource>();
+        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
