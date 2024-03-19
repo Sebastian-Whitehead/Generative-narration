@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8035599089484727042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.503111
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00040971208
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.582
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 835bbe03b46970846af3b71e415e8a77, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: caea98aed0764b842b25c7bdfc81c6ff, type: 2}
+    - target: {fileID: 919132149155446097, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      propertyPath: m_Name
+      value: planter_box
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6363233445971597888}
+  m_SourcePrefab: {fileID: 100100000, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+--- !u!1 &7153201776286350931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e81ce597adcb3342b7d267c4e6fbe3e, type: 3}
+  m_PrefabInstance: {fileID: 8035599089484727042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &-6363233445971597888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153201776286350931}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.009121012, y: 0.0041310894, z: 0.0042331833}
+  m_Center: {x: 0.0000017031562, y: 0.0000054531256, z: 0.0021206862}
