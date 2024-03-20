@@ -1,89 +1,71 @@
-using UnityEngine;
-using UnityEngine.UI; // Add this line
-using System.Collections;
 using System.IO;
-using System.Net;
-using System;
+using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using UnityEngine.Networking;
 
+// This class is responsible for converting text to speech.
 public class TextToSpeech : MonoBehaviour
 {
-    const int CHUNK_SIZE = 1024;
+    // The ID of the voice to be used for speech synthesis.
     public string voiceID = "21m00Tcm4TlvDq8ikWAM";
     string url;
+    // The API key for the Eleven Labs Text-to-Speech service.
     public string xiApiKey = "769852b4a6ecf3b3008813ef2d8355b7";
+    // The ID of the model to be used for speech synthesis.
     public string modelId = "eleven_turbo_v2";
     public float stability = 0.5f;
     public float similarityBoost = 0.5f;
-    public InputField inputField; // Add this line
+    public InputField inputField;
 
-    void Start(){
-        url = "https://api.elevenlabs.io/v1/text-to-speech/" + voiceID;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        // Construct the URL for the Eleven Labs Text-to-Speech service.
+        url = "https://api.elevenlabs.io/v1/text-to-speech/" + voiceID + "/stream";
+
+        audioSource = GetComponent<AudioSource>();
     }
 
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.Return)) {
-            StartCoroutine(Generate(inputField.text)); // Start the coroutine with the text from the input field
+    void Update()
+    {
+        // If the Return key is pressed, start the text-to-speech generation.
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            StartCoroutine(Generate(inputField.text));
         }
     }
 
-    IEnumerator Generate(string inputText) // Add a parameter to this method
+    // This coroutine generates the speech from the input text.
+    IEnumerator Generate(string inputText)
     {
-        // Create JSON data string
+        // Construct the JSON data for the POST request.
         string jsonData = "{\"text\":\"" + inputText + "\",\"model_id\":\"" + modelId + "\",\"voice_settings\":{\"stability\":" + stability.ToString(System.Globalization.CultureInfo.InvariantCulture) + ",\"similarity_boost\":" + similarityBoost.ToString(System.Globalization.CultureInfo.InvariantCulture) + "}}";
 
-        // Set request headers
-        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-        request.Method = "POST";
-        request.Headers.Add("xi-api-key", xiApiKey);
-        request.ContentType = "application/json";
-        request.Accept = "audio/wav";
+        // Create a UnityWebRequest for getting an AudioClip.
+        UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.MPEG);
+        www.method = "POST";
+        // Set the headers for the request.
+        www.SetRequestHeader("xi-api-key", xiApiKey);
+        www.SetRequestHeader("Content-Type", "application/json");
+        // Set the upload handler for the request.
+        www.uploadHandler = new UploadHandlerRaw(System.Text.Encoding.UTF8.GetBytes(jsonData));
 
-        // Write JSON data to request stream
-        using (var streamWriter = new StreamWriter(request.GetRequestStream()))
-        {
-            streamWriter.Write(jsonData);
-            streamWriter.Flush();
-            streamWriter.Close();
-        }
+        // Send the request and yield until it is done.
+        yield return www.SendWebRequest();
 
-        // Get response
-        try
+        // If the request is successful, play the synthesized speech.
+        if (www.result == UnityWebRequest.Result.Success)
         {
-            WebResponse response = request.GetResponse();
-            using (var stream = response.GetResponseStream())
-            {
-                // Save the stream to a file
-                string path = Path.Combine(Application.dataPath, "Voices");
-                if (!Directory.Exists(path))
-                {
-                    Directory.CreateDirectory(path);
-                }
-                using (var fileStream = new FileStream(Path.Combine(path, "output.wav"), FileMode.Create))
-                {
-                    byte[] buffer = new byte[CHUNK_SIZE];
-                    int bytesRead;
-                    while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
-                    {
-                        fileStream.Write(buffer, 0, bytesRead);
-                    }
-                }
-            }
+            AudioClip clip = DownloadHandlerAudioClip.GetContent(www);
+            audioSource.clip = clip;
+            audioSource.Play();
         }
-        catch (WebException e)
+        else
         {
-            Debug.Log("WebException: " + e.Message);
-            if (e.Response != null)
-            {
-                using (var errorResponse = (HttpWebResponse)e.Response)
-                {
-                    using (var reader = new StreamReader(errorResponse.GetResponseStream()))
-                    {
-                        string error = reader.ReadToEnd();
-                        Debug.Log("Response Error: " + error);
-                    }
-                }
-            }
+            // If the request fails, log the error.
+            Debug.Log("WebException: " + www.error);
         }
-        yield return null;
     }
 }
