@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI; // Add this line
 using System.Collections;
 using System.IO;
 using System.Net;
@@ -13,14 +14,22 @@ public class TextToSpeech : MonoBehaviour
     public string modelId = "eleven_turbo_v2";
     public float stability = 0.5f;
     public float similarityBoost = 0.5f;
+    public InputField inputField; // Add this line
 
     void Start(){
-        string url = "https://api.elevenlabs.io/v1/text-to-speech/" + voiceID;
+        url = "https://api.elevenlabs.io/v1/text-to-speech/" + voiceID;
     }
-    IEnumerator Generate()
+
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.Return)) {
+            StartCoroutine(Generate(inputField.text)); // Start the coroutine with the text from the input field
+        }
+    }
+
+    IEnumerator Generate(string inputText) // Add a parameter to this method
     {
         // Create JSON data string
-        string jsonData = "{\"text\":\"Born and raised in the charming south, I can add a touch of sweet southern hospitality to your audiobooks and podcasts\",\"model_id\":\"" + modelId + "\",\"voice_settings\":{\"stability\":" + stability.ToString(System.Globalization.CultureInfo.InvariantCulture) + ",\"similarity_boost\":" + similarityBoost.ToString(System.Globalization.CultureInfo.InvariantCulture) + "}}";
+        string jsonData = "{\"text\":\"" + inputText + "\",\"model_id\":\"" + modelId + "\",\"voice_settings\":{\"stability\":" + stability.ToString(System.Globalization.CultureInfo.InvariantCulture) + ",\"similarity_boost\":" + similarityBoost.ToString(System.Globalization.CultureInfo.InvariantCulture) + "}}";
 
         // Set request headers
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
