@@ -481,7 +481,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f5fd897ee4fe444973a73dbfdc3ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceID: 21m00Tcm4TlvDq8ikWAM
+  voiceNames:
+  - Rachel
+  - Dorothy
+  - Michael
+  - George
+  selectedVoice: 0
   xiApiKey: 769852b4a6ecf3b3008813ef2d8355b7
   modelId: eleven_turbo_v2
   stability: 0.5
