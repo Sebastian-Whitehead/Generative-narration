@@ -21,6 +21,8 @@ public class TextToSpeech : MonoBehaviour
     public InputField inputField;
 
     private AudioSource audioSource;
+    private float startTime;
+    private bool isGenerating = false;
 
     void Start()
     {
@@ -35,6 +37,13 @@ public class TextToSpeech : MonoBehaviour
         {
             StartCoroutine(Generate(inputField.text));
         }
+
+        // If audio is generating, calculate the elapsed time and display it.
+        if (isGenerating)
+        {
+            float elapsedTime = Time.time - startTime;
+            Debug.Log("Elapsed time: " + elapsedTime);
+        }
     }
 
     void UpdateUrl()
@@ -47,6 +56,10 @@ public class TextToSpeech : MonoBehaviour
     IEnumerator Generate(string inputText)
     {
         UpdateUrl();
+
+        // Reset the start time when a new audio generation request is made.
+        startTime = Time.time;
+        isGenerating = true;
 
         // Construct the JSON data for the POST request.
         string jsonData = "{\"text\":\"" + inputText + "\",\"model_id\":\"" + modelId + "\",\"voice_settings\":{\"stability\":" + stability.ToString(System.Globalization.CultureInfo.InvariantCulture) + ",\"similarity_boost\":" + similarityBoost.ToString(System.Globalization.CultureInfo.InvariantCulture) + "}}";
@@ -69,6 +82,7 @@ public class TextToSpeech : MonoBehaviour
             AudioClip clip = DownloadHandlerAudioClip.GetContent(www);
             audioSource.clip = clip;
             audioSource.Play();
+            isGenerating = false;
         }
         else
         {
