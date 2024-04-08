@@ -20,7 +20,8 @@ public class TextToSpeech : MonoBehaviour
     public float similarityBoost = 0.5f;
 
     private AudioSource audioSource;
-    private float startTime;
+    private float startTimeLLM;
+    private float startTimeTTS;
     private bool isGenerating = false;
 
     void Start()
@@ -40,11 +41,6 @@ public class TextToSpeech : MonoBehaviour
         */
 
         // If audio is generating, calculate the elapsed time and display it.
-        if (isGenerating)
-        {
-            float elapsedTime = Time.time - startTime;
-            Debug.Log("Elapsed time: " + elapsedTime);
-        }
     }
 
     void UpdateUrl()
@@ -53,9 +49,19 @@ public class TextToSpeech : MonoBehaviour
         url = "https://api.elevenlabs.io/v1/text-to-speech/" + voiceIDs[selectedVoice] + "/stream";
     }
 
-    public void StartGeneration(string TTS_text)
+    public void StartGeneration(string TTS_text, float passed_time)
     {
         StartCoroutine(Generate(TTS_text));
+        startTimeLLM = passed_time;
+    }
+
+    private void Log_ResponseTime()
+    {
+        float Total_elapsedTime = Time.time - startTimeLLM;
+        float TTS_elapsedTime = Time.time - startTimeTTS;
+        float LLM_elapsedTime = startTimeTTS - startTimeLLM;
+
+        Debug.Log($"Total Time: {Total_elapsedTime} || TTS Time: {TTS_elapsedTime}  || LLM Time: {LLM_elapsedTime}");
     }
 
     // This coroutine generates the speech from the input text.
@@ -64,7 +70,7 @@ public class TextToSpeech : MonoBehaviour
         UpdateUrl();
 
         // Reset the start time when a new audio generation request is made.
-        startTime = Time.time;
+        startTimeTTS = Time.time;
         isGenerating = true;
 
         // Construct the JSON data for the POST request.
@@ -89,6 +95,8 @@ public class TextToSpeech : MonoBehaviour
             audioSource.clip = clip;
             audioSource.Play();
             isGenerating = false;
+
+            Log_ResponseTime();
         }
         else
         {

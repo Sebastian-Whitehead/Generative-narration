@@ -12,6 +12,10 @@ namespace LLMUnitySamples
         public InputField playerText;
         public Text AIText;
 
+
+        private bool IsGenerating;
+        private float startTime;
+
         void Start()
         {
             playerText.onSubmit.AddListener(onInputFieldSubmit);
@@ -20,16 +24,20 @@ namespace LLMUnitySamples
 
         void onInputFieldSubmit(string message)
         {
+            IsGenerating = true;
             playerText.interactable = false;
             AIText.text = "...";
+
+            startTime = Time.time;
             _ = llm.Chat(message, SetAIText, AIReplyComplete);
         }
 
         public void SetAIText(string text)
         {
             AIText.text = text;
-            Debug.Log(text);
-            tts.StartGeneration(text);
+            // Debug.Log(text);
+
+            tts.StartGeneration(text, startTime);
         }
 
         public void AIReplyComplete()
