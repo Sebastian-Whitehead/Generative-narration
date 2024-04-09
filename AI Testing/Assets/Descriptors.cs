@@ -28,16 +28,14 @@ public class Descriptors : MonoBehaviour
     public List<string> descriptors = new List<string>();
 
 
-    public int InteractionCount = 0;
+    public int noi = 0;
     private int adjectiveCount = 0;
 
-   
-
-    private void Start()
+    private void Awake()
     {
         adjectives.Add("name", Name);
         adjectives.Add("location", Location);
-
+        adjectives.Add("type", type.ToString());
         
         foreach (string adj in descriptors)
         {
@@ -56,16 +54,25 @@ public class Descriptors : MonoBehaviour
         }
     }
 
+    
 
     // --------------------------- Getters and Setters -----------------------------------
     public Dictionary<string, string> GetDescriptors()
     {
-        return adjectives;
+        noi++;
+        return adjectives; 
     }
+   
 
     public string GetDescriptor(string key)
     {
+        noi++;
         return adjectives[key];
+    }
+
+    public int GetNoi()
+    {
+        return noi;
     }
 
     public void AddDescriptors(string key, string value)

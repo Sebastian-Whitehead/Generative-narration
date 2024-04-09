@@ -1,4 +1,5 @@
 using LLMUnity;
+using LLMUnitySamples;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,35 +10,8 @@ using UnityEngine.UIElements;
 
 public class InputFormatter : MonoBehaviour
 {
-
-    public enum eventType
-    {
-        PickedUp,
-        Throw,
-        MoveInto,
-        MoveOutof,
-        LookAt
-    }
-
-    public LLM llm;
-
     [NonSerialized]
     public string Prompt;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        trigger(this, eventType.PickedUp);   
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
 
     /// <summary>
     /// Called when a user action is detected. It generates a prompt in the following format:
@@ -45,36 +19,95 @@ public class InputFormatter : MonoBehaviour
     /// </summary>
     /// <param name="obj"> Relevant object to action</param>
     /// <param name="interactionType">enum describing action type (fx. PickedUp / Threw / MovedTo)</param>
-    public void trigger(object obj, eventType interactionType)
+    public string format(GameObject obj, string interactionType)
     {
-        string interractionType = "picked up";
-        List<string> adjectives = new List<string>() { "red", "big" };
-        string Name = "apple";
-        string location = "from a small stall";
-        int noi = 2;
+        Descriptors _descriptor = obj.GetComponent<Descriptors>();
+        int noi = _descriptor.GetNoi();
+        Dictionary<string, string> adjectives = _descriptor.GetDescriptors();
 
-        Prompt = "The user " + interractionType + " a ";
+        /*
+        Debug.Log("KEYLIST:");
+        List<string> test = new List<string>(adjectives.Keys);
+        foreach (var item in test)
+        {
+            Debug.Log(item);
+        }
+        */
+        //string Name = "Apple";
+
+
+        string Name = adjectives["name"];
+        string location = adjectives["location"];
+
+        // Deconstruct dictionary to adjective list
+        List<string> adjList = new List<string>();
+
+        List<string> keys = new List<string>(adjectives.Keys);
+        foreach (var key in keys)
+        {
+            if (key == "name") continue;
+            if (key == "location") continue;
+            if (key == "type") continue;
+
+            adjList.Add(adjectives[key]);
+        }
+        
+        //TODO: Figure out how to unpack the interraction type.
+
+        string Prompt = ConstructPrompt(Name, location, adjList, interactionType, noi);
+        Debug.Log($"Prompt: {Prompt}");
+
+        return Prompt;
+    }
+
+
+
+
+    //Take all the components extracted from the descriptors dictionary and format a comprehensable prompt. 
+    public string ConstructPrompt(string name, string location, List<string> adjList, string interactionType, int noi)
+    {
+        Debug.Log($"The object has: {adjList.Count} adjectives");
+        
+        string Prompt = "The user " + interactionType + " a ";
 
         int appendCount = 0;
-        Debug.Log(adjectives.Count);
-        foreach (string adj in adjectives)
+        foreach (string adj in adjList)
         {
             Prompt += adj;
-            if (appendCount != adjectives.Count - 1)
+            if (appendCount != adjList.Count - 1)
             {
                 Prompt += ", ";
             }
-
             appendCount++;
         }
 
-        Prompt += " " + Name + " " + location + ". ";
+        Prompt += " " + name + " " + location + ". ";
 
         if (noi > 1)
         {
             Prompt += "They have done this " + noi.ToString() + " time(s).";
         }
 
-        Debug.Log(Prompt);
+        return Prompt;
     }
+
+
+
+
+
+
+    // Unpacking Functions -------------------------------------------------------- **Depricated**
+
+    /*
+    public Dictionary<string, string> unpackDictionary(Descriptors adj)
+    {
+        return adj.GetDescriptors();
+    }
+
+    public int unpackNOI(Descriptors adj)
+    {
+        return adj.GetNoi();
+    }
+    */
+   
 }
