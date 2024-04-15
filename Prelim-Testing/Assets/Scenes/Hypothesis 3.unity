@@ -1780,6 +1780,60 @@ Transform:
   - {fileID: 1374013468}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &253602678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 253602679}
+  - component: {fileID: 253602680}
+  m_Layer: 0
+  m_Name: TTS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &253602679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253602678}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262349490}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &253602680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253602678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c671b6f46ba6c49a107709430cea45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceNames:
+  - Rachel
+  - Dorothy
+  - Michael
+  - George
+  selectedVoice: 0
+  xiApiKey: 769852b4a6ecf3b3008813ef2d8355b7
+  modelId: eleven_turbo_v2
+  stability: 0.5
+  similarityBoost: 0.5
 --- !u!4 &260629962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2081220385885982864, guid: b47fc8717213a9e48ac568b6d901f2bc, type: 3}
@@ -3267,6 +3321,100 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 63c5dee7f20b724408b5328cfa73b7e5, type: 3}
   m_PrefabInstance: {fileID: 710361512}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &533228053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533228054}
+  - component: {fileID: 533228055}
+  m_Layer: 0
+  m_Name: LLM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &533228054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533228053}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262349490}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &533228055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533228053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50e3140c3ecaaf1c848dbf141cc2074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advancedOptions: 0
+  expertOptions: 0
+  host: localhost
+  port: 13333
+  stream: 1
+  grammar: 
+  seed: 0
+  numPredict: 256
+  cachePrompt: 1
+  temperature: 0.2
+  topK: 40
+  topP: 0.9
+  minP: 0.05
+  repeatPenalty: 1.1
+  presencePenalty: 0
+  frequencyPenalty: 0
+  tfsZ: 1
+  typicalP: 1
+  repeatLastN: 64
+  penalizeNl: 1
+  penaltyPrompt: 
+  mirostat: 0
+  mirostatTau: 5
+  mirostatEta: 0.1
+  nProbs: 0
+  ignoreEos: 0
+  nKeep: -1
+  stop: []
+  playerName: user
+  AIName: assistant
+  prompt: A chat between a curious human and an artificial intelligence assistant.
+    The assistant gives helpful, detailed, and polite answers to the human's questions.
+  setNKeepToPrompt: 1
+  chatTemplate: mistral chat
+  grammarString: 
+  numThreads: -1
+  numGPULayers: 0
+  parallelPrompts: -1
+  debug: 0
+  asynchronousStartup: 0
+  remote: 0
+  killExistingServersOnStart: 1
+  model: mistral-7b-instruct-v0.2.Q4_K_M.gguf
+  lora: 
+  contextSize: 512
+  batchSize: 512
+  SelectedModel: 1
+  modelProgress: 1
+  modelCopyProgress: 1
+  modelHide: 1
 --- !u!4 &540592703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3677362756522200299, guid: 14dd66ef8e251a9488796dcae42cc2ff, type: 3}
@@ -5885,6 +6033,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b78fe27c21c35a4e80db421f3f12e29, type: 3}
+--- !u!1 &948950060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 948950061}
+  - component: {fileID: 948950062}
+  m_Layer: 0
+  m_Name: Prompt Formatter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &948950061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948950060}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262349490}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &948950062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948950060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2371935b0f573114b80b51d54064afb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &962650113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8733,6 +8925,57 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 711307326}
   m_SourcePrefab: {fileID: 100100000, guid: 2d3fd0dc0fefde046b1be7d8877c8616, type: 3}
+--- !u!1 &1262349488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1262349490}
+  - component: {fileID: 1262349489}
+  m_Layer: 0
+  m_Name: Pipeline Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1262349489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262349488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac90d2b2e668bfb4dac281e6550c7882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  llm: {fileID: 0}
+  tts: {fileID: 0}
+  formatter: {fileID: 0}
+  targetObject: {fileID: 0}
+--- !u!4 &1262349490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262349488}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.103667, y: -9.267522, z: 0.36739025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 948950061}
+  - {fileID: 253602679}
+  - {fileID: 533228054}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1266982393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2281399981234057274, guid: f6241122f3eacff4c9beb56faa337311, type: 3}
@@ -15916,3 +16159,4 @@ SceneRoots:
   - {fileID: 1091881685}
   - {fileID: 1356852165}
   - {fileID: 1193469184}
+  - {fileID: 1262349490}
