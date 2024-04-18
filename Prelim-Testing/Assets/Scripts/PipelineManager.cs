@@ -15,25 +15,31 @@ public class PipelineManager : MonoBehaviour
     public TextToSpeech tts;
     public InputFormatter formatter;
 
-    public GameObject targetObject; // Should eventually be passed to it
+    //public GameObject targetObject; // Should eventually be passed to it
+    private GameObject lastTargetObject;
 
-    private bool IsGenerating;
+    [NonSerialized]
+    public bool LLMGenerating;
     private float startTime;
 
 
     private void Start()
     {
-        submitToLLM(formatter.format(targetObject, "picked up"));
+
     }
 
     public void trigger(GameObject obj, string ActionType)
     {
+        if (obj == lastTargetObject) { return; }
+        if (!LLMGenerating) {CancelRequests();} // If the LLM has not completed a previous generation cancle it before starting a new one.
+        lastTargetObject = obj;
+
         submitToLLM(formatter.format(obj, ActionType));
     }
     // LLM Interface ----------------------------------------------
     void submitToLLM(string message)
     {
-        IsGenerating = true;
+        LLMGenerating = true;
         Debug.Log("AI: ...");
 
         startTime = Time.time;
@@ -42,8 +48,10 @@ public class PipelineManager : MonoBehaviour
 
     public void Reply(string text)
     {
+        LLMGenerating = false;
         Debug.Log($"AI: {text}");
         tts.StartGeneration(text, startTime); // Call the TTS Model with the reply frokm the LLM
+        //TTSGenerating = true;
     }
 
     public void CancelRequests()

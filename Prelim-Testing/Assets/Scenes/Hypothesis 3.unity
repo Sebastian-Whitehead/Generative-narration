@@ -210,13 +210,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1291568730}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 595060}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 595059}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &595057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 595056}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &595058 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 595056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &595059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &595060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Goblet
+  Location: Alcohol Vendors stand
+  descriptors:
+  - Brass
+  - Engraved
+  - Tattered
+  noiGroup: {fileID: 1234751061}
+  noi: 0
 --- !u!1001 &7248403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -490,13 +536,74 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1642989143}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 36591714}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 36591716}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 36591715}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &36591712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 36591711}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &36591713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 36591711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &36591714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36591713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &36591715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36591713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &36591716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36591713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Watering Can
+  Location: In the flower bed
+  descriptors:
+  - Metal
+  - Silver
+  noiGroup: {fileID: 0}
+  noi: 0
 --- !u!4 &42059230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2081220385885982864, guid: b47fc8717213a9e48ac568b6d901f2bc, type: 3}
@@ -934,13 +1041,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1914940976383681122}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 110508626}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 110508625}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &110508623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 110508622}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &110508624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 110508622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &110508625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110508624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &110508626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110508624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Goblet
+  Location: Alcohol Vendors stand
+  descriptors:
+  - Brass
+  - Engraved
+  - Tattered
+  noiGroup: {fileID: 1234751061}
+  noi: 0
 --- !u!1001 &112213506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1141,6 +1294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 121620159}
+  - component: {fileID: 121620160}
   m_Layer: 0
   m_Name: Crowbars
   m_TagString: Untagged
@@ -1166,6 +1320,19 @@ Transform:
   - {fileID: 1666772662}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &121620160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121620158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!1001 &127207028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1233,13 +1400,56 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 312730859}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 127207032}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 127207031}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &127207029 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 127207028}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &127207030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 127207028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &127207031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127207030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &127207032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127207030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Croissant
+  Location: In a basket on the baker's stall
+  descriptors: []
+  noiGroup: {fileID: 1612385846}
+  noi: 0
 --- !u!4 &161577835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2981515698198987788, guid: b904b0fa6dd9d9743b5bb6f5663d7efc, type: 3}
@@ -1312,13 +1522,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 925650389303282897}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 184414789}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 184414788}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &184414786 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 184414785}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &184414787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 184414785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &184414788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184414787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &184414789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184414787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bottle of "Intertwine" Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Pinotage
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!4 &193349135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7498097217569154281, guid: 6d2314bfd30a02e4280380a9bb668476, type: 3}
@@ -1453,13 +1708,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 47922627}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 207607099}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 207607098}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &207607096 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 207607095}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &207607097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 207607095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &207607098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207607097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &207607099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207607097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Loaf of bread
+  Location: On the baker's stall
+  descriptors:
+  - Round
+  noiGroup: {fileID: 426254739}
+  noi: 0
 --- !u!1001 &218301044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1595,13 +1894,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 528177577}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 226068301}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 226068300}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &226068298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 226068297}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &226068299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 226068297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &226068300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226068299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &226068301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226068299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bottle of "Intertwine" Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Pinotage
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!1001 &239172270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1669,13 +2013,56 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 885299536}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239172274}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239172273}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &239172271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 239172270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &239172272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 239172270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &239172273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239172272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &239172274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239172272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Croissant
+  Location: In a basket on the baker's stall
+  descriptors: []
+  noiGroup: {fileID: 1612385846}
+  noi: 0
 --- !u!1001 &245554516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1746,6 +2133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247296741}
+  - component: {fileID: 247296742}
   m_Layer: 0
   m_Name: Wine Bottles
   m_TagString: Untagged
@@ -1780,6 +2168,19 @@ Transform:
   - {fileID: 1374013468}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &247296742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247296740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!1 &253602678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,6 +2191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 253602679}
   - component: {fileID: 253602680}
+  - component: {fileID: 253602681}
   m_Layer: 0
   m_Name: TTS
   m_TagString: Untagged
@@ -1806,7 +2208,7 @@ Transform:
   m_GameObject: {fileID: 253602678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -13.66, y: 11.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1834,6 +2236,102 @@ MonoBehaviour:
   modelId: eleven_turbo_v2
   stability: 0.5
   similarityBoost: 0.5
+--- !u!82 &253602681
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253602678}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &260629962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2081220385885982864, guid: b47fc8717213a9e48ac568b6d901f2bc, type: 3}
@@ -2066,13 +2564,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1099159384}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 274051259}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 274051258}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &274051256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 274051255}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &274051257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 274051255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &274051258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274051257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &274051259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274051257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Vase
+  Location: On a vendors stand
+  descriptors:
+  - Brass
+  - Small
+  - Engraved
+  noiGroup: {fileID: 1219712692}
+  noi: 0
 --- !u!1 &275684167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6672493179099965064, guid: 5da527b41c6f00c44b3512a807b01efe, type: 3}
@@ -2097,6 +2641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 292127733}
+  - component: {fileID: 292127734}
   m_Layer: 0
   m_Name: Hammers
   m_TagString: Untagged
@@ -2123,6 +2668,19 @@ Transform:
   - {fileID: 1845062979}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &292127734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292127732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!4 &309173473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1305124683871423613, guid: 68e21f5edee8d04449d2347ec9d312b0, type: 3}
@@ -2449,13 +3007,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 823196770}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 387719546}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 387719545}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &387719543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 387719542}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &387719544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 387719542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &387719545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387719544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &387719546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387719544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bun with cheese
+  Location: On the baker's stand
+  descriptors:
+  - Round
+  noiGroup: {fileID: 1777627218}
+  noi: 0
 --- !u!1001 &401035303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2523,13 +3125,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 454104435}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401035307}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401035306}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &401035304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 401035303}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &401035305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 401035303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &401035306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401035305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &401035307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401035305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Fiero Vinea Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Cabernet Sauvignon
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!1001 &410643770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2597,13 +3244,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 642753767}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 410643774}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 410643773}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &410643771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 410643770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &410643772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 410643770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &410643773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410643772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &410643774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410643772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Pickaxe
+  Location: Leaning against the tool smith's stall
+  descriptors:
+  - Wooden Handeled
+  - Metal
+  noiGroup: {fileID: 851200470}
+  noi: 0
 --- !u!1 &422543699 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6733177361254619370, guid: e5cbd58313011bb42bb083140c032749, type: 3}
@@ -2640,6 +3332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 426254738}
+  - component: {fileID: 426254739}
   m_Layer: 0
   m_Name: 3x Loaf Stack
   m_TagString: Untagged
@@ -2665,6 +3358,19 @@ Transform:
   - {fileID: 692239229}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &426254739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426254737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!4 &426334020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3002009433420001166, guid: 5da527b41c6f00c44b3512a807b01efe, type: 3}
@@ -2758,13 +3464,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 269881434}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 429958318}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 429958317}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &429958315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 429958314}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &429958316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 429958314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &429958317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429958316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &429958318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429958316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Loaf of bread
+  Location: on the baker's stall
+  descriptors:
+  - Oblong
+  noiGroup: {fileID: 865055219}
+  noi: 0
 --- !u!1 &436641248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1544768856616789569, guid: 2d3fd0dc0fefde046b1be7d8877c8616, type: 3}
@@ -2842,13 +3592,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 72031367}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 440874535}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 440874534}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &440874532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 440874531}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &440874533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 440874531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &440874534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440874533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &440874535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440874533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Pickaxe
+  Location: Leaning against the tool smith's stall
+  descriptors:
+  - Wooden Handeled
+  - Metal
+  noiGroup: {fileID: 851200470}
+  noi: 0
 --- !u!4 &442405973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4992790041805417138, guid: a7420073dfd6e494c8ca34fb2109ec98, type: 3}
@@ -2926,13 +3721,56 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 42059230}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 476100340}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 476100339}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &476100337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 476100336}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &476100338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 476100336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &476100339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476100338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &476100340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476100338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Croissant
+  Location: In a basket on the baker's stall
+  descriptors: []
+  noiGroup: {fileID: 1612385846}
+  noi: 0
 --- !u!1001 &486750503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3149,13 +3987,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2118976762119856181}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 508804745}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 508804744}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &508804742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 508804741}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &508804743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 508804741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &508804744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508804743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &508804745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508804743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Goblet
+  Location: Alcohol Vendors stand
+  descriptors:
+  - Brass
+  - Engraved
+  - Tattered
+  noiGroup: {fileID: 1234751061}
+  noi: 0
 --- !u!1001 &509294383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3223,13 +4107,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1570092992007179288}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 509294387}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 509294386}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &509294384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 509294383}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &509294385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 509294383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &509294386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509294385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &509294387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509294385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Fiero Vinea Champagne
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!4 &510668115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4214898994886422731, guid: dfc0d401a6a357e4fa74365455b3c1ef, type: 3}
@@ -3620,13 +4548,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 206731212}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 548576532}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 548576531}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &548576529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 548576528}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &548576530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 548576528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &548576531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548576530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &548576532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548576530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bottle of "Intertwine" Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Pinotage
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!1001 &560214557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3846,13 +4819,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1597872662}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 578788119}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 578788118}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &578788116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 578788115}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &578788117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 578788115}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &578788118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578788117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &578788119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578788117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Clearwater Crystals Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Chardonnay
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!1001 &582266671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3920,13 +4938,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1786684940}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 582266675}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 582266674}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &582266672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 582266671}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &582266673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 582266671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &582266674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582266673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &582266675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582266673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Shovel
+  Location: Leaning on the tool smith's stall
+  descriptors:
+  - Wooden Handled
+  - Metal
+  noiGroup: {fileID: 1702589062}
+  noi: 0
 --- !u!1 &589275957
 GameObject:
   m_ObjectHideFlags: 0
@@ -4590,13 +5653,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 540592703}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 692239232}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 692239231}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &692239229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 692239228}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &692239230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 692239228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &692239231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692239230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &692239232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692239230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Loaf of bread
+  Location: On the baker's stall
+  descriptors:
+  - Round
+  noiGroup: {fileID: 426254739}
+  noi: 0
 --- !u!1001 &701174366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4721,13 +5828,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4714138530258535285}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 708146157}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 708146156}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &708146154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 708146153}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &708146155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 708146153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &708146156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708146155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &708146157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708146155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Fiero Vinea Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Cabernet Sauvignon
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!4 &708295552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3002009433420001166, guid: 5da527b41c6f00c44b3512a807b01efe, type: 3}
@@ -4821,13 +5973,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1841218146}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 709931847}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 709931846}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &709931844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 709931843}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &709931845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 709931843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &709931846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709931845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &709931847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709931845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Shovel
+  Location: Leaning on the tool smith's stall
+  descriptors:
+  - Wooden Handled
+  - Metal
+  noiGroup: {fileID: 1702589062}
+  noi: 0
 --- !u!1001 &710361512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5337,13 +6534,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 568734166}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 790709028}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 790709027}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &790709025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 790709024}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &790709026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 790709024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &790709027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790709026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &790709028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790709026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bun with cheese
+  Location: On the baker's stand
+  descriptors:
+  - Round
+  noiGroup: {fileID: 1777627218}
+  noi: 0
 --- !u!1 &792862715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7466309848407612372, guid: 537eb1cd50e656f4993532197f38fdf1, type: 3}
@@ -5557,6 +6798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 851200469}
+  - component: {fileID: 851200470}
   m_Layer: 0
   m_Name: Pick axes
   m_TagString: Untagged
@@ -5583,6 +6825,19 @@ Transform:
   - {fileID: 2069160757}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &851200470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851200468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!4 &860793064 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7628396805549428811, guid: 9928fe38d6becdc40ad02d95bf169daa, type: 3}
@@ -5597,6 +6852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 865055218}
+  - component: {fileID: 865055219}
   m_Layer: 0
   m_Name: Bread x4
   m_TagString: Untagged
@@ -5623,6 +6879,19 @@ Transform:
   - {fileID: 429958315}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &865055219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865055217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!1001 &870954414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5690,13 +6959,56 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 260629962}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 870954418}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 870954417}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &870954415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 870954414}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &870954416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 870954414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &870954417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870954416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &870954418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870954416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Croissant
+  Location: In a basket on the baker's stall
+  descriptors: []
+  noiGroup: {fileID: 1612385846}
+  noi: 0
 --- !u!4 &871689550 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2281399981234057274, guid: f6241122f3eacff4c9beb56faa337311, type: 3}
@@ -5805,13 +7117,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 442405973}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 910541710}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 910541709}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &910541707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 910541706}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &910541708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 910541706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &910541709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910541708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &910541710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910541708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Crowbar
+  Location: tool smith's stall
+  descriptors:
+  - Metal
+  - Gray
+  noiGroup: {fileID: 121620160}
+  noi: 0
 --- !u!1001 &918838999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5879,13 +7236,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 708295552}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 918839003}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 918839002}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &918839000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 918838999}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &918839001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 918838999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &918839002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918839001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &918839003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918839001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Fiero Vinea Champagne
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!1001 &920265757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6144,13 +7545,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1033108045}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 962650117}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 962650116}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &962650114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 962650113}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &962650115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 962650113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &962650116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962650115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &962650117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962650115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bun with cheese
+  Location: On the baker's stand
+  descriptors:
+  - Round
+  noiGroup: {fileID: 1777627218}
+  noi: 0
 --- !u!1001 &963125242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6218,13 +7663,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1820590353}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 963125246}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 963125245}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &963125243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 963125242}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &963125244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 963125242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &963125245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963125244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &963125246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963125244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bun with cheese
+  Location: On the baker's stand
+  descriptors:
+  - Round
+  noiGroup: {fileID: 1777627218}
+  noi: 0
 --- !u!1001 &975072333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6964,13 +8453,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1667568239}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 975074458}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 975074457}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &975074455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 975074454}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &975074456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 975074454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &975074457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975074456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &975074458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975074456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Vase
+  Location: On a vendors stand
+  descriptors:
+  - Brass
+  - Small
+  - Engraved
+  noiGroup: {fileID: 1219712692}
+  noi: 0
 --- !u!1001 &981781869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7202,13 +8737,56 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1063293668}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1001444517}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1001444516}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1001444514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1001444513}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1001444515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1001444513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1001444516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001444515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1001444517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001444515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Croissant
+  Location: In a basket on the baker's stall
+  descriptors: []
+  noiGroup: {fileID: 1612385846}
+  noi: 0
 --- !u!1001 &1010090931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7357,13 +8935,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2596389187388858337}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1021368255}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1021368254}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &1021368252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 1021368251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1021368253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 1021368251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1021368254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021368253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1021368255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021368253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Goblet
+  Location: Alcohol Vendors stand
+  descriptors:
+  - Brass
+  - Engraved
+  - Tattered
+  noiGroup: {fileID: 1234751061}
+  noi: 0
 --- !u!4 &1033108045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3292989226508113191, guid: f851147535d47c2408162f5ad8041c56, type: 3}
@@ -7467,13 +9091,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1572962552}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1034538097}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1034538096}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1034538094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1034538093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1034538095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1034538093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1034538096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034538095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1034538097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034538095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Loaf of bread
+  Location: on the baker's stall
+  descriptors:
+  - Oblong
+  noiGroup: {fileID: 865055219}
+  noi: 0
 --- !u!1001 &1048744160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7746,13 +9414,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2023395185}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1098121433}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1098121432}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1098121430 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1098121429}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1098121431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1098121429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1098121432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098121431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1098121433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098121431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Hammer
+  Location: On the tool smith's stall
+  descriptors:
+  - Wooden handled
+  - Metal
+  noiGroup: {fileID: 292127734}
+  noi: 0
 --- !u!4 &1099159384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3899801144125566854, guid: 6b78fe27c21c35a4e80db421f3f12e29, type: 3}
@@ -8210,11 +9923,22 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6559198441471240595, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1588794985}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6559198441471240592, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1563384279}
+    - targetCorrespondingSourceObject: {fileID: 6559198441471240592, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1563384278}
   m_SourcePrefab: {fileID: 100100000, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
 --- !u!4 &1193469185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2991896912978869755, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+  m_PrefabInstance: {fileID: 1193469184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1193469186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6559198441471240592, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
   m_PrefabInstance: {fileID: 1193469184}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1212046927
@@ -8304,13 +10028,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1526751465}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1212046931}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1212046930}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &1212046928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 1212046927}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1212046929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 1212046927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1212046930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212046929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1212046931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212046929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Goblet
+  Location: Alcohol Vendors stand
+  descriptors:
+  - Brass
+  - Engraved
+  - Tattered
+  noiGroup: {fileID: 1234751061}
+  noi: 0
 --- !u!4 &1212334584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 63c5dee7f20b724408b5328cfa73b7e5, type: 3}
@@ -8383,13 +10153,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 261469802}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1213811897}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1213811896}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1213811894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1213811893}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1213811895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1213811893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1213811896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213811895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1213811897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213811895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Hammer
+  Location: On the tool smith's stall
+  descriptors:
+  - Wooden handled
+  - Metal
+  noiGroup: {fileID: 292127734}
+  noi: 0
 --- !u!1 &1219712690
 GameObject:
   m_ObjectHideFlags: 0
@@ -8399,6 +10214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1219712691}
+  - component: {fileID: 1219712692}
   m_Layer: 0
   m_Name: Vases
   m_TagString: Untagged
@@ -8427,6 +10243,19 @@ Transform:
   - {fileID: 274051256}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219712692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219712690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!1001 &1228163213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8494,13 +10323,56 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1508886046}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1228163217}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1228163216}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1228163214 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1228163213}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1228163215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1228163213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1228163216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228163215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1228163217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228163215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Croissant
+  Location: In a basket on the baker's stall
+  descriptors: []
+  noiGroup: {fileID: 1612385846}
+  noi: 0
 --- !u!1001 &1232463287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8567,6 +10439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1234751060}
+  - component: {fileID: 1234751061}
   m_Layer: 0
   m_Name: Goblets
   m_TagString: Untagged
@@ -8596,6 +10469,19 @@ Transform:
   - {fileID: 508804742}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1234751061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234751059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!1 &1235375565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6672493179099965064, guid: 5da527b41c6f00c44b3512a807b01efe, type: 3}
@@ -8756,13 +10642,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1286618225}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1255241837}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1255241836}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1255241834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1255241833}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1255241835 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1255241833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1255241836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255241835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1255241837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255241835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bun with cheese
+  Location: On the baker's stand
+  descriptors:
+  - Round
+  noiGroup: {fileID: 1777627218}
+  noi: 0
 --- !u!1 &1256288658
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,10 +10884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac90d2b2e668bfb4dac281e6550c7882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  llm: {fileID: 0}
-  tts: {fileID: 0}
-  formatter: {fileID: 0}
-  targetObject: {fileID: 0}
+  llm: {fileID: 533228055}
+  tts: {fileID: 253602680}
+  formatter: {fileID: 948950062}
 --- !u!4 &1262349490
 Transform:
   m_ObjectHideFlags: 0
@@ -9058,13 +10987,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1926805867}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1308132416}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1308132415}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1308132413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1308132412}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1308132414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1308132412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1308132415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308132414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1308132416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308132414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Pickaxe
+  Location: Leaning against the tool smith's stall
+  descriptors:
+  - Wooden Handeled
+  - Metal
+  noiGroup: {fileID: 851200470}
+  noi: 0
 --- !u!1001 &1309261862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9132,13 +11106,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 843433360}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1309261866}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1309261865}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1309261863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1309261862}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1309261864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1309261862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1309261865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309261864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1309261866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309261864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Loaf of bread
+  Location: on the baker's stall
+  descriptors:
+  - Oblong
+  noiGroup: {fileID: 865055219}
+  noi: 0
 --- !u!1001 &1310142180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9226,13 +11244,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 440591750}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1310142184}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1310142183}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &1310142181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 1310142180}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1310142182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 1310142180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1310142183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310142182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1310142184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310142182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Vase
+  Location: On a vendors stand
+  descriptors:
+  - Brass
+  - Small
+  - Engraved
+  noiGroup: {fileID: 1219712692}
+  noi: 0
 --- !u!1001 &1321133499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9562,13 +11626,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 161577835}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1374013471}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1374013470}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1374013468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1374013467}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1374013469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1374013467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1374013470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374013469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1374013471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374013469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Clearwater Crystals Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Chardonnay
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!4 &1380638567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2281399981234057274, guid: f6241122f3eacff4c9beb56faa337311, type: 3}
@@ -9752,13 +11861,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 613056071}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1391310619}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1391310618}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &1391310616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 1391310615}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1391310617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 1391310615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1391310618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391310617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1391310619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391310617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Vase
+  Location: On a vendors stand
+  descriptors:
+  - Brass
+  - Medium Sized
+  - Engraved
+  noiGroup: {fileID: 1219712692}
+  noi: 0
 --- !u!1001 &1392938170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10268,13 +12423,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1034305292}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1447560194}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1447560193}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1447560191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1447560190}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1447560192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1447560190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1447560193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447560192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1447560194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447560192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Loaf of bread
+  Location: on the baker's stall
+  descriptors:
+  - Oblong
+  noiGroup: {fileID: 865055219}
+  noi: 0
 --- !u!1 &1493989311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2497737290204381216, guid: b904b0fa6dd9d9743b5bb6f5663d7efc, type: 3}
@@ -10574,6 +12773,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6559198441471240595, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
   m_PrefabInstance: {fileID: 1193469184}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1563384278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193469186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1563384279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193469186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Coin
+  Location: the edge of the fountain
+  descriptors:
+  - Gold
+  - Large
+  noiGroup: {fileID: 0}
+  noi: 0
 --- !u!1001 &1565317062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10724,13 +12957,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1767355026}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1575028411}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1575028410}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1575028408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1575028407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1575028409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1575028407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1575028410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575028409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1575028411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575028409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Hammer
+  Location: On the tool smith's stall
+  descriptors:
+  - Wooden handled
+  - Metal
+  noiGroup: {fileID: 292127734}
+  noi: 0
 --- !u!4 &1588794985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2012714529198066280, guid: 303f3192e6ed49a46b04b98517c992b1, type: 3}
@@ -11186,6 +13464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1612385845}
+  - component: {fileID: 1612385846}
   m_Layer: 0
   m_Name: Croissant
   m_TagString: Untagged
@@ -11215,6 +13494,19 @@ Transform:
   - {fileID: 127207029}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1612385846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612385844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!1 &1621116819
 GameObject:
   m_ObjectHideFlags: 0
@@ -11484,13 +13776,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1520051580}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666772665}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666772664}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1666772662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1666772661}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1666772663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1666772661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1666772664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666772663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1666772665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666772663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Crowbar
+  Location: tool smith's stall
+  descriptors:
+  - Metal
+  - Gray
+  noiGroup: {fileID: 121620160}
+  noi: 0
 --- !u!4 &1667568239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3899801144125566854, guid: 6b78fe27c21c35a4e80db421f3f12e29, type: 3}
@@ -11599,13 +13936,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1162579664}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1687349290}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1687349289}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1687349287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1687349286}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1687349288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1687349286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1687349289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687349288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1687349290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687349288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Crowbar
+  Location: tool smith's stall
+  descriptors:
+  - Metal
+  - Gray
+  noiGroup: {fileID: 121620160}
+  noi: 0
 --- !u!4 &1694333019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 24929c053016f034ab21ae7c75106d32, type: 3}
@@ -11646,6 +14028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1702589061}
+  - component: {fileID: 1702589062}
   m_Layer: 0
   m_Name: Shovels
   m_TagString: Untagged
@@ -11671,6 +14054,19 @@ Transform:
   - {fileID: 582266672}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1702589062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702589060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!4 &1704740788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2081220385885982864, guid: b47fc8717213a9e48ac568b6d901f2bc, type: 3}
@@ -11743,13 +14139,56 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1704740788}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1708800975}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1708800974}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1708800972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1708800971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1708800973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1708800971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1708800974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708800973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1708800975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708800973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Croissant
+  Location: In a basket on the baker's stall
+  descriptors: []
+  noiGroup: {fileID: 1612385846}
+  noi: 0
 --- !u!1001 &1734648334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11886,13 +14325,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 426334020}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1757280212}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1757280211}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1757280209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1757280208}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1757280210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1757280208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1757280211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757280210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1757280212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757280210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Fiero Vinea Champagne
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!1001 &1758700049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12142,6 +14625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1777627217}
+  - component: {fileID: 1777627218}
   m_Layer: 0
   m_Name: Bun With Cheese
   m_TagString: Untagged
@@ -12170,6 +14654,19 @@ Transform:
   - {fileID: 1255241834}
   m_Father: {fileID: 1193469185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1777627218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777627216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137cc98ea47c51842a8c6694cf0a808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalNoi: 0
 --- !u!1001 &1779362464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12382,13 +14879,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7972697057433694724}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1807219245}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1807219244}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1807219242 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1807219241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1807219243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1807219241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1807219244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807219243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1807219245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807219243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Clearwater Crystals Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Chardonnay
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!4 &1819816667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3292989226508113191, guid: f851147535d47c2408162f5ad8041c56, type: 3}
@@ -12548,13 +15090,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1658087563}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1845062982}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1845062981}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1845062979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1845062978}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1845062980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1845062978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1845062981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845062980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1845062982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845062980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Hammer
+  Location: On the tool smith's stall
+  descriptors:
+  - Wooden handled
+  - Metal
+  noiGroup: {fileID: 292127734}
+  noi: 0
 --- !u!1001 &1861379229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12622,13 +15209,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1819816667}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1861379233}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1861379232}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1861379230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1861379229}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1861379231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1861379229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1861379232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861379231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1861379233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861379231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Bun with cheese
+  Location: On the baker's stand
+  descriptors:
+  - Round
+  noiGroup: {fileID: 1777627218}
+  noi: 0
 --- !u!1001 &1870684760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12716,13 +15347,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2079078166}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1870684764}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1870684763}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &1870684761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 1870684760}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1870684762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 1870684760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1870684763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870684762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1870684764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870684762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Vase
+  Location: On a vendors stand
+  descriptors:
+  - Brass
+  - Medium Sized
+  - Engraved
+  noiGroup: {fileID: 1219712692}
+  noi: 0
 --- !u!1001 &1902809839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12859,13 +15536,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 673116991}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1911856817}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1911856816}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &1911856814 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 1911856813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1911856815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 1911856813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1911856816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911856815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1911856817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911856815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Loaf of bread
+  Location: On the baker's stall
+  descriptors:
+  - Round
+  noiGroup: {fileID: 426254739}
+  noi: 0
 --- !u!4 &1926805867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6424014640152538332, guid: 8a7f83be06dd0f042a74e297d2f46866, type: 3}
@@ -13076,13 +15797,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 25198388}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1946347491}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1946347490}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &1946347488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 1946347487}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946347489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 1946347487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1946347490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946347489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &1946347491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946347489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Goblet
+  Location: Alcohol Vendors stand
+  descriptors:
+  - Brass
+  - Engraved
+  - Tattered
+  noiGroup: {fileID: 1234751061}
+  noi: 0
 --- !u!1 &1972190932
 GameObject:
   m_ObjectHideFlags: 0
@@ -13310,13 +16077,59 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1148430451}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2007423036}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2007423035}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &2007423033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 2007423032}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2007423034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 2007423032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2007423035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007423034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &2007423036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007423034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Goblet
+  Location: Alcohol Vendors stand
+  descriptors:
+  - Brass
+  - Engraved
+  - Tattered
+  noiGroup: {fileID: 1234751061}
+  noi: 0
 --- !u!1 &2010315558
 GameObject:
   m_ObjectHideFlags: 0
@@ -13532,13 +16345,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 906836225}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2023051792}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2023051791}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &2023051789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 2023051788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2023051790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 2023051788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2023051791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023051790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &2023051792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023051790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Shovel
+  Location: Leaning on the tool smith's stall
+  descriptors:
+  - Wooden Handled
+  - Metal
+  noiGroup: {fileID: 1702589062}
+  noi: 0
 --- !u!4 &2023395185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1924468481699338727, guid: 5d32d72bbb7ce4e47b158fb4be46ce5a, type: 3}
@@ -13611,13 +16469,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 68442859}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2035148206}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2035148205}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &2035148203 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 2035148202}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2035148204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 2035148202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2035148205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035148204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &2035148206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035148204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Fiero Vinea Wine
+  Location: Alcohol Vendor's Stall
+  descriptors:
+  - White
+  - Cabernet Sauvignon
+  noiGroup: {fileID: 247296742}
+  noi: 0
 --- !u!4 &2036116360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 24929c053016f034ab21ae7c75106d32, type: 3}
@@ -13690,13 +16593,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 679876360}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2069160760}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2069160759}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &2069160757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 2069160756}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2069160758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 2069160756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2069160759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069160758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &2069160760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069160758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Pickaxe
+  Location: Leaning against the tool smith's stall
+  descriptors:
+  - Wooden Handeled
+  - Metal
+  noiGroup: {fileID: 851200470}
+  noi: 0
 --- !u!4 &2079078166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3899801144125566854, guid: 6b78fe27c21c35a4e80db421f3f12e29, type: 3}
@@ -13769,13 +16717,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 989943188}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2081740474}
+    - targetCorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2081740473}
   m_SourcePrefab: {fileID: 100100000, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
 --- !u!4 &2081740471 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
   m_PrefabInstance: {fileID: 2081740470}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2081740472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517549319329480230, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+  m_PrefabInstance: {fileID: 2081740470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2081740473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081740472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &2081740474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081740472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Basket of Croissants
+  Location: On the Baker's Stall
+  descriptors:
+  - Woven
+  - Wicker
+  noiGroup: {fileID: 0}
+  noi: 0
 --- !u!1001 &2082097691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15699,13 +18692,59 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6222564281184787686}
+    - targetCorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6222564281184787685}
   m_SourcePrefab: {fileID: 100100000, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
 --- !u!4 &6222564281184787683 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
   m_PrefabInstance: {fileID: 6222564281184787682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6222564281184787684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 6222564281184787682}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6222564281184787685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6222564281184787684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42543f0acc0f401419e38cffbabfd05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &6222564281184787686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6222564281184787684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Vase
+  Location: On a vendors stand
+  descriptors:
+  - Brass
+  - Medium Sized
+  - Engraved
+  noiGroup: {fileID: 1219712692}
+  noi: 0
 --- !u!1001 &6346741770556971183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16099,15 +19138,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2012714529198066280, guid: 303f3192e6ed49a46b04b98517c992b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.79
       objectReference: {fileID: 0}
     - target: {fileID: 2012714529198066280, guid: 303f3192e6ed49a46b04b98517c992b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.502
       objectReference: {fileID: 0}
     - target: {fileID: 2012714529198066280, guid: 303f3192e6ed49a46b04b98517c992b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.754
+      value: 1.329
       objectReference: {fileID: 0}
     - target: {fileID: 2012714529198066280, guid: 303f3192e6ed49a46b04b98517c992b1, type: 3}
       propertyPath: m_LocalRotation.w

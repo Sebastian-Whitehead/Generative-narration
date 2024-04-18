@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Networking;
 
+[RequireComponent(typeof(AudioSource))]
 public class TextToSpeech : MonoBehaviour
 {
     // The names of the voices to be used for speech synthesis.

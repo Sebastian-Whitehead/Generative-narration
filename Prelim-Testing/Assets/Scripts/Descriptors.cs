@@ -27,7 +27,7 @@ public class Descriptors : MonoBehaviour
 
     public List<string> descriptors = new List<string>();
 
-
+    public GroupedNoi noiGroup;
     public int noi = 0;
     private int adjectiveCount = 0;
 
@@ -44,6 +44,7 @@ public class Descriptors : MonoBehaviour
         }
 
         conditionalLog(log, $"{type} {Name} has {adjectives.Count} descriptors");
+        noi = noiGroup.TotalNoi;
     }
 
     private void conditionalLog(bool condition, string text)
@@ -59,20 +60,34 @@ public class Descriptors : MonoBehaviour
     // --------------------------- Getters and Setters -----------------------------------
     public Dictionary<string, string> GetDescriptors()
     {
-        noi++;
+        UpdateNoi();
         return adjectives; 
     }
    
 
     public string GetDescriptor(string key)
     {
-        noi++;
+        UpdateNoi();
         return adjectives[key];
     }
 
     public int GetNoi()
     {
         return noi;
+    }
+
+    private void UpdateNoi()
+    {
+        if(noiGroup == null) 
+        { 
+            noi++; 
+           
+        } else
+        {
+            noiGroup.TotalNoi++;
+            noi = noiGroup.TotalNoi;
+        }
+
     }
 
     public void AddDescriptors(string key, string value)

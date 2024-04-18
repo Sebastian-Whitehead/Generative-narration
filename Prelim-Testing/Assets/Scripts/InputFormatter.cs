@@ -81,7 +81,7 @@ public class InputFormatter : MonoBehaviour
             appendCount++;
         }
 
-        Prompt += " " + name + " " + location + ". ";
+        Prompt += " " + name + " located, " + location + ". ";
 
         if (noi > 1)
         {
