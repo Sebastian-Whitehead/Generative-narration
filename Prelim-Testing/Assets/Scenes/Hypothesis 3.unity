@@ -7921,6 +7921,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kinematic Vase (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 975074459}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -8025,6 +8041,17 @@ MonoBehaviour:
   - Engraved
   noiGroup: {fileID: 1219712692}
   noi: 0
+--- !u!114 &975074459 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6987140212316841439, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+  m_PrefabInstance: {fileID: 975074454}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975074456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162b4e5a3d1fcd043afbc6bf71ab2e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &981781869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9380,6 +9407,34 @@ PrefabInstance:
     - target: {fileID: 6559198441471240594, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
       propertyPath: m_InteractionManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559198441471240594, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559198441471240594, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559198441471240594, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1563384278}
+    - target: {fileID: 6559198441471240594, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559198441471240594, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PassObjToPipeline
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559198441471240594, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GrabExtension, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559198441471240594, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6559198441471240595, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11326,6 +11381,34 @@ PrefabInstance:
     - target: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       propertyPath: m_Name
       value: Kinematic Vase (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1391310618}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PassObjToPipeline
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GrabExtension, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14944,6 +15027,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kinematic Vase (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1870684763}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PassObjToPipeline
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GrabExtension, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -16700,7 +16811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2135727800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21704,6 +21815,34 @@ PrefabInstance:
     - target: {fileID: 7259961811777482080, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       propertyPath: m_Name
       value: Kinematic Vase
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6222564281184787685}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PassObjToPipeline
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GrabExtension, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259961811777482082, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259961811777482083, guid: 2e649ef8dfc51304185a208871617a1a, type: 3}
       propertyPath: m_LocalPosition.x
