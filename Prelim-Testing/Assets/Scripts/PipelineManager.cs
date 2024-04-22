@@ -15,7 +15,7 @@ public class PipelineManager : MonoBehaviour
     public TextToSpeech tts;
     public InputFormatter formatter;
 
-    //public GameObject targetObject; // Should eventually be passed to it
+    public GameObject testTargetObject; // Should eventually be passed to it
     private GameObject lastTargetObject;
 
     [NonSerialized]
@@ -25,7 +25,10 @@ public class PipelineManager : MonoBehaviour
 
     private void Start()
     {
-
+        if(testTargetObject != null)
+        {
+            trigger(testTargetObject, "picked up");
+        }
     }
 
     public void trigger(GameObject obj, string ActionType)

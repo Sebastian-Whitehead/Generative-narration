@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.20154457, g: 0.25056943, b: 0.29861757, a: 1}
+  m_IndirectSpecularColor: {r: 0.65014225, g: 0.65647596, b: 0.6621726, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14747,6 +14747,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6654881858925215978, guid: 4998d93b4042b674f9e1589b0a2d49ab, type: 3}
   m_PrefabInstance: {fileID: 8335189412364807087}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1675483822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675483824}
+  - component: {fileID: 1675483823}
+  m_Layer: 0
+  m_Name: Test Target Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1675483823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675483822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7541797ce336bc438e4d334708e46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  log: 0
+  Name: Apple
+  Location: On the ground
+  descriptors:
+  - Red
+  - Large
+  noiGroup: {fileID: 0}
+  noi: 0
+--- !u!4 &1675483824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675483822}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5141488, y: 7.3640203, z: 20.215443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1683606837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1505039684822739584, guid: f6241122f3eacff4c9beb56faa337311, type: 3}
@@ -26302,3 +26355,4 @@ SceneRoots:
   - {fileID: 1356852165}
   - {fileID: 1193469184}
   - {fileID: 1262349490}
+  - {fileID: 1675483824}
