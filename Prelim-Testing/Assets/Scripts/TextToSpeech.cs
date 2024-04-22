@@ -22,7 +22,7 @@ public class TextToSpeech : MonoBehaviour
 
     private AudioSource audioSource;
     private float startTimeLLM;
-    private float startTimeTTS;
+    private float TimeTTS;
     private bool isGenerating = false;
 
     void Start()
@@ -59,8 +59,8 @@ public class TextToSpeech : MonoBehaviour
     private void Log_ResponseTime()
     {
         float Total_elapsedTime = Time.time - startTimeLLM;
-        float TTS_elapsedTime = Time.time - startTimeTTS;
-        float LLM_elapsedTime = startTimeTTS - startTimeLLM;
+        float TTS_elapsedTime = Time.time - TimeTTS;
+        float LLM_elapsedTime = TimeTTS - startTimeLLM;
 
         Debug.Log($"Total Time: {Total_elapsedTime} || TTS Time: {TTS_elapsedTime}  || LLM Time: {LLM_elapsedTime}");
     }
@@ -69,8 +69,10 @@ public class TextToSpeech : MonoBehaviour
     IEnumerator Generate(string inputText)
     {
         UpdateUrl();
+        // Reset the start time when a new audio generation request is made.
+        TimeTTS = Time.time;
 
-        
+
         isGenerating = true;
 
         // Construct the JSON data for the POST request.
@@ -96,8 +98,6 @@ public class TextToSpeech : MonoBehaviour
             audioSource.Play();
             isGenerating = false;
 
-            // Reset the start time when a new audio generation request is made.
-            startTimeTTS = Time.time;
             Log_ResponseTime();
         }
         else
