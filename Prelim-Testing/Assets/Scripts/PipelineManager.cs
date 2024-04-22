@@ -35,7 +35,7 @@ public class PipelineManager : MonoBehaviour
     {
         Debug.Log("Message sent");
         if (obj == lastTargetObject) { return; }
-        if (!LLMGenerating) {CancelRequests();} // If the LLM has not completed a previous generation cancle it before starting a new one.
+        if (LLMGenerating) {CancelRequests();} // If the LLM has not completed a previous generation cancle it before starting a new one.
         lastTargetObject = obj;
         
         submitToLLM(formatter.format(obj, ActionType));

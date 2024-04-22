@@ -4537,8 +4537,13 @@ MonoBehaviour:
   stop: []
   playerName: user
   AIName: assistant
-  prompt: A chat between a curious human and an artificial intelligence assistant.
-    The assistant gives helpful, detailed, and polite answers to the human's questions.
+  prompt: "You take the role of a narrator, you will be told what happens in a video
+    game.  Keep your responses short and precise less than 31 words per answer. Also
+    do not mention what the user did, just describe what they see.\r\n Do not mention
+    the words \"The user\". You should narrate the users action using a condescending
+    tone. see the world negatively, so if the user sees bread, you describe it as
+    stale, they see tools, you describe them as rusty.\r\n Here is the setting: 
+    The user is in a medieval town square market"
   setNKeepToPrompt: 1
   chatTemplate: mistral chat
   grammarString: 
@@ -11225,6 +11230,7 @@ MonoBehaviour:
   llm: {fileID: 533228055}
   tts: {fileID: 253602680}
   formatter: {fileID: 948950062}
+  testTargetObject: {fileID: 1675483822}
 --- !u!4 &1262349490
 Transform:
   m_ObjectHideFlags: 0
