@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.65014225, g: 0.65647596, b: 0.6621726, a: 1}
+  m_IndirectSpecularColor: {r: 0.20154457, g: 0.25056943, b: 0.29861757, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4548,7 +4548,11 @@ MonoBehaviour:
   chatTemplate: mistral chat
   grammarString: 
   numThreads: -1
+<<<<<<< Updated upstream
   numGPULayers: 13
+=======
+  numGPULayers: 19
+>>>>>>> Stashed changes
   parallelPrompts: -1
   debug: 0
   asynchronousStartup: 0
@@ -11230,7 +11234,7 @@ MonoBehaviour:
   llm: {fileID: 533228055}
   tts: {fileID: 253602680}
   formatter: {fileID: 948950062}
-  testTargetObject: {fileID: 1675483822}
+  testTargetObject: {fileID: 0}
 --- !u!4 &1262349490
 Transform:
   m_ObjectHideFlags: 0

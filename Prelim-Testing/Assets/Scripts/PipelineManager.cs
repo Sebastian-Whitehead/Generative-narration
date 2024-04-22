@@ -33,8 +33,9 @@ public class PipelineManager : MonoBehaviour
 
     public void trigger(GameObject obj, string ActionType)
     {
-        Debug.Log("Message sent");
+        
         if (obj == lastTargetObject) { return; }
+        Debug.Log("Message sent");
         if (LLMGenerating) {CancelRequests();} // If the LLM has not completed a previous generation cancle it before starting a new one.
         lastTargetObject = obj;
         
