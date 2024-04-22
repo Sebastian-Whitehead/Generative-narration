@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.20154457, g: 0.25056943, b: 0.29861757, a: 1}
+  m_IndirectSpecularColor: {r: 0.65014225, g: 0.65647596, b: 0.6621726, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4548,11 +4548,7 @@ MonoBehaviour:
   chatTemplate: mistral chat
   grammarString: 
   numThreads: -1
-<<<<<<< Updated upstream
-  numGPULayers: 13
-=======
-  numGPULayers: 19
->>>>>>> Stashed changes
+  numGPULayers: 15
   parallelPrompts: -1
   debug: 0
   asynchronousStartup: 0
