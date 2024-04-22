@@ -70,8 +70,7 @@ public class TextToSpeech : MonoBehaviour
     {
         UpdateUrl();
 
-        // Reset the start time when a new audio generation request is made.
-        startTimeTTS = Time.time;
+        
         isGenerating = true;
 
         // Construct the JSON data for the POST request.
@@ -97,6 +96,8 @@ public class TextToSpeech : MonoBehaviour
             audioSource.Play();
             isGenerating = false;
 
+            // Reset the start time when a new audio generation request is made.
+            startTimeTTS = Time.time;
             Log_ResponseTime();
         }
         else
