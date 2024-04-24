@@ -675,7 +675,10 @@ namespace LLMUnity
                 {
                     float currentProgress = request.downloadProgress;
                     // Check if progress has changed
-                    if (currentProgress != lastProgress && callback != null)
+
+                    // THIS IS THE CORRECT SOLUTION. It is supplied by the dev however it is dramatically slower than other solutions.
+                    /*
+                    if (currentProgress != lastProgress && callback != null && request.result == UnityWebRequest.Result.Success)
                     {
                         
                         if (request.result != UnityWebRequest.Result.Success) 
@@ -687,9 +690,19 @@ namespace LLMUnity
 
                         callback?.Invoke(ConvertContent(request.downloadHandler.text, getContent));
                         lastProgress = currentProgress;
+                    }*/
+
+                    if (currentProgress != lastProgress && callback != null)
+                    {
+                        callback?.Invoke(ConvertContent(request.downloadHandler.text, getContent));
+                        lastProgress = currentProgress;
                     }
+
+
                     // Wait for the next frame
                     await Task.Yield();
+
+
                 }
                 WIPRequests.Remove(request);
                 if (request.result != UnityWebRequest.Result.Success) Debug.LogError(request.error);

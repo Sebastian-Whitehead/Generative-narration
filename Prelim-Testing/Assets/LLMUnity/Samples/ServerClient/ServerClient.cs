@@ -34,12 +34,6 @@ namespace LLMUnitySamples
         public void SetAIText(string text)
         {
             AIText.text = text;
-            if (text.Contains("END"))
-            {
-                text = text.Substring(0, text.Length - 3);
-                AIText.text = text;
-                AIReplyComplete();
-            }
         }
 
         public void AIReplyComplete()

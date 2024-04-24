@@ -61,43 +61,51 @@ public class PipelineManager : MonoBehaviour
         }
         else { 
             _ = llmClient.Chat(message, ReplyClient);
+            //_ = llmClient.Chat(message, Reply, ReplyCompleteClient);
         }
 
     }
 
-    // Append to starting prompt:
-    // "AFTER EVERY MESSAGE SAY THE WORD END, Otherwise i will not be able to repond".
-    public void ReplyClient(string text)
-    {
-        if (text.Contains("END"))
-        {
-            text = text.Substring(0, text.Length - 3);
-            Reply(text);
-        }
+   // This is not a perfect solution as it can messup sometimes HOWEVER IT IS AS FAST AS PHYSICALL POSSIBLE.
+   public void ReplyClient(string text)
+   {
 
-        if (text == "") return;
+       Debug.Log(text);  
+       if (text.Contains("END"))
+       {
+           Debug.Log("Message End Detected");
+           text = text.Substring(0, text.Length - 4);
+           Reply(text);
+       }
 
-        if(text != lastServerText)
-        {
-            lastServerText = text;
-            lastTextUpdateTime = Time.time;
-            return;
-        }
-
-        if (Time.time - lastTextUpdateTime >= ServerUpdateThreshold)
-        {
-            Reply(text);
-            lastServerText = "";
-        }
+       // Backup
+       if(text != lastServerText)
+       {
+           lastServerText = text;
+           lastTextUpdateTime = Time.time;
+           return;
+       }
+       if (lastServerText == "") return;
+       if (Time.time - lastTextUpdateTime >= ServerUpdateThreshold)
+       {
+           Debug.Log("Timed Out!");
+           lastServerText = "";
+           Reply(text);
+       }
     }
-
-
+    
     public void Reply(string text)
     {
         LLMGenerating = false;
         Debug.Log($"AI: {text}");
         tts.StartGeneration(text, startTime); // Call the TTS Model with the reply frokm the LLM
         //TTSGenerating = true;
+    }
+
+
+    public void ReplyCompleteClient()
+    {
+        Debug.Log("Server AI Reply Complete");
     }
 
     public void CancelRequests()

@@ -11228,8 +11228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llm: {fileID: 533228055}
-  llmClient: {fileID: 0}
-  runRemote: 0
+  llmClient: {fileID: 1598974559}
+  runRemote: 1
   tts: {fileID: 253602680}
   formatter: {fileID: 948950062}
   testTargetObject: {fileID: 0}
@@ -14066,9 +14066,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95e88cdd1b0a159692667660a065473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advancedOptions: 0
+  advancedOptions: 1
   expertOptions: 0
-  host: localhost
+  host: http://25.13.244.66
   port: 13333
   stream: 1
   grammar: 
@@ -14095,15 +14095,15 @@ MonoBehaviour:
   nKeep: -1
   stop: []
   playerName: user
-  AIName: assistant
+  AIName: narrator
   prompt: "You take the role of a narrator, you will be told what happens in a video
     game.  Keep your responses short and precise less than 31 words per answer. Also
     do not mention what the user did, just describe what they see.\r\n Do not mention
     the words \"The user\". You should narrate the users action using a condescending
     tone. see the world negatively, so if the user sees bread, you describe it as
     stale, they see tools, you describe them as rusty.\r\n Here is the setting: 
-    The user is in a medieval town square market\r\n\r\nALWAY END YOUR MESSAGE WITH
-    THE WORD \"END\" so i know when you are done speaking"
+    The user is in a medieval town square market\r\n[ALWAY END/APPEND YOUR MESSAGE
+    WITH THE WORD \"END\". This does not count towards your word total]"
   setNKeepToPrompt: 1
   chatTemplate: mistral chat
   grammarString: 
