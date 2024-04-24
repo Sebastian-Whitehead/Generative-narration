@@ -12,6 +12,10 @@ public class PipelineManager : MonoBehaviour
 {
 
     public LLM llm;
+    public LLMClient llmClient;
+    public bool runRemote;
+
+
     public TextToSpeech tts;
     public InputFormatter formatter;
 
@@ -22,6 +26,9 @@ public class PipelineManager : MonoBehaviour
     public bool LLMGenerating;
     private float startTime;
 
+    public float ServerUpdateThreshold = 500;
+    private string lastServerText;
+    private float lastTextUpdateTime;
 
     private void Start()
     {
@@ -48,8 +55,42 @@ public class PipelineManager : MonoBehaviour
         Debug.Log("AI: ...");
 
         startTime = Time.time;
-        _ = llm.Chat(message, Reply);
+
+        if (!runRemote) { 
+            _ = llm.Chat(message, Reply);
+        }
+        else { 
+            _ = llmClient.Chat(message, ReplyClient);
+        }
+
     }
+
+    // Append to starting prompt:
+    // "AFTER EVERY MESSAGE SAY THE WORD END, Otherwise i will not be able to repond".
+    public void ReplyClient(string text)
+    {
+        if (text.Contains("END"))
+        {
+            text = text.Substring(0, text.Length - 3);
+            Reply(text);
+        }
+
+        if (text == "") return;
+
+        if(text != lastServerText)
+        {
+            lastServerText = text;
+            lastTextUpdateTime = Time.time;
+            return;
+        }
+
+        if (Time.time - lastTextUpdateTime >= ServerUpdateThreshold)
+        {
+            Reply(text);
+            lastServerText = "";
+        }
+    }
+
 
     public void Reply(string text)
     {

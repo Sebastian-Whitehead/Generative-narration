@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50e3140c3ecaaf1c848dbf141cc2074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advancedOptions: 0
+  advancedOptions: 1
   expertOptions: 0
   host: localhost
   port: 13333
@@ -1457,29 +1457,29 @@ MonoBehaviour:
   ignoreEos: 0
   nKeep: -1
   stop: []
-  grammarString: 
   playerName: Human
-  AIName: Adam
+  AIName: Jeff
   prompt: A chat between a curious human and an artificial intelligence assistant
     named Adam. The assistant gives helpful, detailed, and polite answers to the
     human's questions.
-  chatTemplate: chatml
   setNKeepToPrompt: 1
-  modelHide: 1
+  chatTemplate: mistral chat
+  grammarString: 
   numThreads: -1
-  numGPULayers: 0
+  numGPULayers: 13
   parallelPrompts: -1
   debug: 0
   asynchronousStartup: 0
-  remote: 0
+  remote: 1
   killExistingServersOnStart: 1
-  model: 
+  model: mistral-7b-instruct-v0.2.Q4_K_M.gguf
   lora: 
   contextSize: 512
   batchSize: 512
-  SelectedModel: 0
+  SelectedModel: 1
   modelProgress: 1
   modelCopyProgress: 1
+  modelHide: 1
 --- !u!4 &1047848255
 Transform:
   m_ObjectHideFlags: 0
@@ -1894,9 +1894,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95e88cdd1b0a159692667660a065473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advancedOptions: 0
+  advancedOptions: 1
   expertOptions: 0
-  host: localhost
+  host: http://25.13.244.66
   port: 13333
   stream: 1
   grammar: 
@@ -1922,14 +1922,19 @@ MonoBehaviour:
   ignoreEos: 0
   nKeep: -1
   stop: []
-  grammarString: 
   playerName: Human
-  AIName: Eve
-  prompt: A chat between a curious human and an artificial intelligence assistant
-    named Eve. The assistant gives helpful, detailed, and polite answers to the human's
-    questions.
-  chatTemplate: chatml
+  AIName: Henry
+  prompt: "You take the role of a narrator, you will be told what happens in a video
+    game.  Keep your responses short and precise less than 31 words per answer. Also
+    do not mention what the user did, just describe what they see.\r\n Do not mention
+    the words \"The user\". You should narrate the users action using a condescending
+    tone. see the world negatively, so if the user sees bread, you describe it as
+    stale, they see tools, you describe them as rusty.\r\n Here is the setting: 
+    The user is in a medieval town square market\r\n\r\nALWAY END YOUR MESSAGE WITH
+    THE WORD \"END\" so i know when you are done speaking"
   setNKeepToPrompt: 1
+  chatTemplate: mistral chat
+  grammarString: 
 --- !u!4 &1493015759
 Transform:
   m_ObjectHideFlags: 0
@@ -2180,7 +2185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015159267}
   - component: {fileID: 2015159266}
-  - component: {fileID: 2015159265}
+  - component: {fileID: 2015159268}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2188,26 +2193,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2015159265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015159264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &2015159266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,6 +2223,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2015159268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015159264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &2091685446
 GameObject:
   m_ObjectHideFlags: 0

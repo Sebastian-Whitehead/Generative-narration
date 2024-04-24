@@ -677,6 +677,14 @@ namespace LLMUnity
                     // Check if progress has changed
                     if (currentProgress != lastProgress && callback != null)
                     {
+                        
+                        if (request.result != UnityWebRequest.Result.Success) 
+                            Debug.LogError(request.error);
+                        Debug.Log(request.downloadHandler.text);
+                        Debug.Log(request.result);
+                        Debug.Log(request.responseCode);
+
+
                         callback?.Invoke(ConvertContent(request.downloadHandler.text, getContent));
                         lastProgress = currentProgress;
                     }
