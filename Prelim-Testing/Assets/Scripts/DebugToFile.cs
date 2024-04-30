@@ -35,7 +35,7 @@ public class DebugToFile : MonoBehaviour
     {
         var curTime = System.DateTime.Now.ToString("dd-MM-yyyy_hh-mm-ss");
         CSVfilename = Application.dataPath + "/CSV_" + definedFileName + curTime + ".csv";
-        Debugfilename = Application.dataPath + "/Debug_" + definedFileName + curTime + ".csv";
+        Debugfilename = Application.dataPath + "/Debug_" + definedFileName + curTime + ".text";
     }
 
     public void D_Log(string logString, string stackTrace, LogType type) // Used when you subscribe to Debug.log event
@@ -72,7 +72,7 @@ public class DebugToFile : MonoBehaviour
     }
 
     private float timer;
-    public float logInterval = 0.5f;
+    public float logInterval = 0.1f;
     private void Update()
     {
         timer += Time.deltaTime;
@@ -85,7 +85,10 @@ public class DebugToFile : MonoBehaviour
             tw_csv.WriteLine($"{Time.time},{s_LLMtime},{s_TTStime},{s_totalTime},{s_interactCount},{frameRate}");
             tw_csv.Close();
 
-            s_LLMtime = s_TTStime = s_totalTime = 0f;
+            if(s_LLMtime != 0 || s_TTStime != 0 || s_totalTime != 0)
+            {
+                s_LLMtime = s_TTStime = s_totalTime = 0f;
+            }
         }  
     }
 

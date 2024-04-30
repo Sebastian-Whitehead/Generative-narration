@@ -44,7 +44,10 @@ public class Descriptors : MonoBehaviour
         }
 
         conditionalLog(log, $"{type} {Name} has {adjectives.Count} descriptors");
+
+        if (noiGroup != null) { 
         noi = noiGroup.TotalNoi;
+        }
     }
 
     private void conditionalLog(bool condition, string text)

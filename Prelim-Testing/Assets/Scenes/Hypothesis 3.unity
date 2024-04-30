@@ -11281,6 +11281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   definedFileName: LogFile
+  logInterval: 0.1
 --- !u!4 &1266982393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2281399981234057274, guid: f6241122f3eacff4c9beb56faa337311, type: 3}

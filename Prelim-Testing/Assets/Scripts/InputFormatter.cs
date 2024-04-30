@@ -22,8 +22,8 @@ public class InputFormatter : MonoBehaviour
     public string format(GameObject obj, string interactionType)
     {
         Descriptors _descriptor = obj.GetComponent<Descriptors>();
-        int noi = _descriptor.GetNoi();
         Dictionary<string, string> adjectives = _descriptor.GetDescriptors();
+        int noi = _descriptor.GetNoi();
 
         /*
         Debug.Log("KEYLIST:");
