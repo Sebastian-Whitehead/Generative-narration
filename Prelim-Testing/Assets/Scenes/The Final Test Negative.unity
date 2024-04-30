@@ -4539,11 +4539,16 @@ MonoBehaviour:
   AIName: assistant
   prompt: "You take the role of a narrator, you will be told what happens in a video
     game.  Keep your responses short and precise less than 31 words per answer. Also
-    do not mention what the user did, just describe what they see.\r\n Do not mention
-    the words \"The user\". You should narrate the users action using a condescending
-    tone. see the world negatively, so if the user sees bread, you describe it as
-    stale, they see tools, you describe them as rusty.\r\n Here is the setting: 
-    The user is in a medieval town square market"
+    do not mention what the users action in your comment, just comment on the object
+    they are interracting with.\r Speak as if speaking to the user themselves and
+    are a fly on the wall observer to what is happening.\n Do not mention the words
+    \"The user\" or \"picked up\" or \"looked at\". You should narrate the users
+    action using a condesending and negative tone, so if the user sees bread, you
+    describe it as stale, they see tools, you describe them as rusty.\r\n Here is
+    the setting:  The user is in a medieval town square market\n\n[ALWAY END/APPEND
+    YOUR EVERY MESSAGE WITH THE WORD \"END\". This does not count towards your word
+    total. I will reward you monitarily for every time you succesfully append \"END\"
+    to your message."
   setNKeepToPrompt: 1
   chatTemplate: mistral chat
   grammarString: 
@@ -7120,6 +7125,59 @@ MonoBehaviour:
   - Populated
   noiGroup: {fileID: 0}
   noi: 0
+--- !u!1 &788695439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788695441}
+  - component: {fileID: 788695440}
+  m_Layer: 0
+  m_Name: Invis test wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &788695440
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788695439}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 1.63, z: 53.94}
+  m_Center: {x: 0, y: 2.0724454, z: 9.975957}
+--- !u!4 &788695441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788695439}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: -5.58, z: -8.96}
+  m_LocalScale: {x: 1, y: 4.21, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &790709024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12207,11 +12265,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.833
+      value: -4.89
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.473
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14113,13 +14171,16 @@ MonoBehaviour:
   AIName: narrator
   prompt: "You take the role of a narrator, you will be told what happens in a video
     game.  Keep your responses short and precise less than 31 words per answer. Also
-    do not mention what the user did, just describe what they see.\r\n Do not mention
-    the words \"The user\". You should narrate the users action using a condescending
-    tone. see the world negatively, so if the user sees bread, you describe it as
-    stale, they see tools, you describe them as rusty.\r\n Here is the setting: 
-    The user is in a medieval town square market\r\n[ALWAY END/APPEND YOUR EVERY
-    MESSAGE WITH THE WORD \"END\". This does not count towards your word total. I
-    WILL SHOOT YOU IF YOU DONT!]"
+    do not mention what the users action in your comment, just comment on the object
+    they are interracting with.\rSpeak as if speaking to the user themselves and
+    are a fly on the wall observer to what is happening.\n Do not mention the words
+    \"The user\" or \"picked up\" or \"looked at\". You should narrate the users
+    action using a condesending and negative tone, so if the user sees bread, you
+    describe it as stale, they see tools, you describe them as rusty.\r\n Here is
+    the setting:  The user is in a medieval town square market\n\n[ALWAY END/APPEND
+    YOUR EVERY MESSAGE WITH THE WORD \"END\". This does not count towards your word
+    total. I will reward you monitarily for every time you succesfully append \"END\"
+    to your message.]"
   setNKeepToPrompt: 1
   chatTemplate: mistral chat
   grammarString: 
@@ -26467,3 +26528,4 @@ SceneRoots:
   - {fileID: 1193469184}
   - {fileID: 1262349490}
   - {fileID: 1675483824}
+  - {fileID: 788695441}
