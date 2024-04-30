@@ -15,7 +15,6 @@ public class PipelineManager : MonoBehaviour
     public LLMClient llmClient;
     public bool runRemote;
 
-
     public TextToSpeech tts;
     public InputFormatter formatter;
 
@@ -30,22 +29,30 @@ public class PipelineManager : MonoBehaviour
     private string lastServerText;
     private float lastTextUpdateTime;
 
+    private float programStartTime;
+    private DebugToFile logger;
+
+    private int interractionCounter = 0;
+
     private void Start()
     {
         if(testTargetObject != null)
         {
             trigger(testTargetObject, "picked up");
         }
+
+        logger = FindObjectOfType<DebugToFile>();
+        programStartTime = Time.time;
     }
 
     public void trigger(GameObject obj, string ActionType)
     {
-        
         if (obj == lastTargetObject) { return; }
-        Debug.Log("Message sent");
+        interractionCounter++;
+        logger.CSVLog(0, 0, 0, interractionCounter);
+
         if (LLMGenerating) {CancelRequests();} // If the LLM has not completed a previous generation cancle it before starting a new one.
         lastTargetObject = obj;
-        
         submitToLLM(formatter.format(obj, ActionType));
     }
     // LLM Interface ----------------------------------------------
@@ -113,5 +120,10 @@ public class PipelineManager : MonoBehaviour
         Debug.Log("REQUEST CANCLED!");
         llm.CancelRequests();
         //TODO: ADD REQUEST CANCLE TO ELEVEN LABS TTS SCRIPT
+    }
+
+    private void OnApplicationQuit()
+    {
+        logger.C_Log($"Total Run Time: {Time.time - programStartTime}");
     }
 }

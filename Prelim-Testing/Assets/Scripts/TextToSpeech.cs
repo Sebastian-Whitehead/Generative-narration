@@ -25,10 +25,13 @@ public class TextToSpeech : MonoBehaviour
     private float TimeTTS;
     private bool isGenerating = false;
 
+    private DebugToFile logger;
+
     void Start()
     {
         UpdateUrl();
         audioSource = GetComponent<AudioSource>();
+        logger = FindObjectOfType<DebugToFile>();
     }
 
     void Update()
@@ -63,6 +66,7 @@ public class TextToSpeech : MonoBehaviour
         float LLM_elapsedTime = TimeTTS - startTimeLLM;
 
         Debug.Log($"Total Time: {Total_elapsedTime} || TTS Time: {TTS_elapsedTime}  || LLM Time: {LLM_elapsedTime}");
+        logger.CSVLog(LLM_elapsedTime, TTS_elapsedTime, Total_elapsedTime, 0);
     }
 
     // This coroutine generates the speech from the input text.
