@@ -52,6 +52,7 @@ public class PipelineManager : MonoBehaviour
         logger.CSVLog(0, 0, 0, interractionCounter);
 
         if (LLMGenerating) {CancelRequests();} // If the LLM has not completed a previous generation cancle it before starting a new one.
+        if (tts.isGenerating || tts.audioSource.isPlaying) { return; }
         lastTargetObject = obj;
         submitToLLM(formatter.format(obj, ActionType));
     }
@@ -105,8 +106,11 @@ public class PipelineManager : MonoBehaviour
     {
         LLMGenerating = false;
         Debug.Log($"AI: {text}");
-        tts.StartGeneration(text, startTime); // Call the TTS Model with the reply frokm the LLM
-        //TTSGenerating = true;
+        if (!tts.audioSource.isPlaying)
+        {
+            tts.StartGeneration(text, startTime); // Call the TTS Model with the reply frokm the LLM
+        }
+        else return;
     }
 
 

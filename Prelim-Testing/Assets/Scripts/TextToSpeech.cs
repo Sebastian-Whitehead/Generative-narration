@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Networking;
+using System;
 
 [RequireComponent(typeof(AudioSource))]
 public class TextToSpeech : MonoBehaviour
@@ -20,10 +21,13 @@ public class TextToSpeech : MonoBehaviour
     public float stability = 0.5f;
     public float similarityBoost = 0.5f;
 
-    private AudioSource audioSource;
+    [NonSerialized]
+    public  AudioSource audioSource;
     private float startTimeLLM;
     private float TimeTTS;
-    private bool isGenerating = false;
+
+    [NonSerialized]
+    public bool isGenerating = false;
 
     private DebugToFile logger;
 
