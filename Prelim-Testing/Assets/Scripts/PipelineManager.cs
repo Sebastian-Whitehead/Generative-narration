@@ -74,12 +74,14 @@ public class PipelineManager : MonoBehaviour
 
     }
 
+    [NonSerialized]
+    public bool HasEnded;
    // This is not a perfect solution as it can messup sometimes HOWEVER IT IS AS FAST AS PHYSICALL POSSIBLE.
    public void ReplyClient(string text)
    {
 
        Debug.Log(text);  
-       if (text.Contains("END"))
+       if (text.Contains("END") && !HasEnded)
        {
            Debug.Log("Message End Detected");
            text = text.Substring(0, text.Length - 4);
@@ -110,7 +112,6 @@ public class PipelineManager : MonoBehaviour
         {
             tts.StartGeneration(text, startTime); // Call the TTS Model with the reply frokm the LLM
         }
-        else return;
     }
 
 

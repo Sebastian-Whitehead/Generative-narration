@@ -21,6 +21,8 @@ public class TextToSpeech : MonoBehaviour
     public float stability = 0.5f;
     public float similarityBoost = 0.5f;
 
+    public PipelineManager pipelineManager;
+
     [NonSerialized]
     public  AudioSource audioSource;
     private float startTimeLLM;
@@ -59,6 +61,8 @@ public class TextToSpeech : MonoBehaviour
 
     public void StartGeneration(string TTS_text, float passed_time)
     {
+        if (isGenerating || audioSource.isPlaying) { return; }
+        isGenerating = true;
         StartCoroutine(Generate(TTS_text));
         startTimeLLM = passed_time;
     }
@@ -69,6 +73,7 @@ public class TextToSpeech : MonoBehaviour
         float TTS_elapsedTime = Time.time - TimeTTS;
         float LLM_elapsedTime = TimeTTS - startTimeLLM;
 
+        pipelineManager.HasEnded = false;
         Debug.Log($"Total Time: {Total_elapsedTime} || TTS Time: {TTS_elapsedTime}  || LLM Time: {LLM_elapsedTime}");
         logger.CSVLog(LLM_elapsedTime, TTS_elapsedTime, Total_elapsedTime, 0);
     }
@@ -79,9 +84,7 @@ public class TextToSpeech : MonoBehaviour
         UpdateUrl();
         // Reset the start time when a new audio generation request is made.
         TimeTTS = Time.time;
-
-
-        isGenerating = true;
+        
 
         // Construct the JSON data for the POST request.
         string jsonData = "{\"text\":\"" + inputText + "\",\"model_id\":\"" + modelId + "\",\"voice_settings\":{\"stability\":" + stability.ToString(System.Globalization.CultureInfo.InvariantCulture) + ",\"similarity_boost\":" + similarityBoost.ToString(System.Globalization.CultureInfo.InvariantCulture) + "}}";
@@ -110,6 +113,8 @@ public class TextToSpeech : MonoBehaviour
         }
         else
         {
+            isGenerating = false;
+            Log_ResponseTime();
             // If the request fails, log the error.
             Debug.Log("WebException: " + www.error);
         }
