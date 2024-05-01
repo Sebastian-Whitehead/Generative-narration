@@ -31,13 +31,16 @@ public class TextToSpeech : MonoBehaviour
     [NonSerialized]
     public bool isGenerating = false;
 
-    private DebugToFile logger;
+    public DebugToFile logger;
 
     void Start()
     {
         UpdateUrl();
         audioSource = GetComponent<AudioSource>();
+
+        if (logger == null) { 
         logger = FindObjectOfType<DebugToFile>();
+        }
     }
 
     void Update()
@@ -109,7 +112,15 @@ public class TextToSpeech : MonoBehaviour
             audioSource.Play();
             isGenerating = false;
 
-            Log_ResponseTime();
+            //Log_ResponseTime();
+
+            float Total_elapsedTime = Time.time - startTimeLLM;
+            float TTS_elapsedTime = Time.time - TimeTTS;
+            float LLM_elapsedTime = TimeTTS - startTimeLLM;
+
+            pipelineManager.HasEnded = false;
+            Debug.Log($"Total Time: {Total_elapsedTime} || TTS Time: {TTS_elapsedTime}  || LLM Time: {LLM_elapsedTime}");
+            logger.CSVLog(LLM_elapsedTime, TTS_elapsedTime, Total_elapsedTime, 0);
         }
         else
         {

@@ -374,7 +374,7 @@ MonoBehaviour:
   chatTemplate: mistral chat
   grammarString: 
   numThreads: -1
-  numGPULayers: 0
+  numGPULayers: 100
   parallelPrompts: -1
   debug: 0
   asynchronousStartup: 0
